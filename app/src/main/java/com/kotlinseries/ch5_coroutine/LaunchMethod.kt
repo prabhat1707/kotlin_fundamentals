@@ -1,9 +1,8 @@
-package com.kotlinseries.ch4_coroutine
+package com.kotlinseries.ch5_coroutine
 
 import android.widget.TextView
 import com.kotlinseries.printLog
 import kotlinx.coroutines.*
-import java.net.URL
 import kotlin.coroutines.CoroutineContext
 
 

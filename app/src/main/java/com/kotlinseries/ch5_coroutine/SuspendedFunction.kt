@@ -1,8 +1,6 @@
-package com.kotlinseries.ch4_coroutine
+package com.kotlinseries.ch5_coroutine
 
-import android.support.annotation.WorkerThread
 import android.widget.TextView
-import android.widget.Toast
 import kotlinx.coroutines.*
 import java.net.URL
 
