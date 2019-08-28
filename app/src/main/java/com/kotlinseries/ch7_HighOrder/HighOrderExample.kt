@@ -1,25 +1,33 @@
+package com.kotlinseries.ch7_HighOrder
+
+class HighOrderExample {
 
 
-fun start(){
-//    val result = passMeFunction(4,4,{a,b -> add(2,3)})
+    fun start() {
 
-    //High Order Return and pass Function as a parameter
+
+        //High Order Return and pass Function as a parameter
     val result = passMeFunction(4,4,{2+3})
     print(result)
     val returnResult = retunMeFunction()
     print(returnResult(2,3))
-}
 
-inline fun passMeFunction(a:Int,b:Int,addd:() -> Int): Int {
- return addd() + 3
-}
 
-fun add(a: Int, b: Int): Int {
-    return a + b
-}
+    }
 
-fun retunMeFunction():((Int,Int) -> Int){
-    return ::add
+    inline fun passMeFunction(a: Int, b: Int, addd: () -> Int): Int {
+        return addd() + 3
+    }
+
+    fun add(a: Int, b: Int): Int {
+        return a + b
+    }
+
+    fun retunMeFunction(): ((Int, Int) -> Int) {
+        return ::add
+    }
+
+
 }
 
 //inline fun doSomethingElse(abc: () -> Unit, noinline xyz: () -> Unit) {

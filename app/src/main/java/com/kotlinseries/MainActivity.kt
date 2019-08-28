@@ -3,7 +3,7 @@ package com.kotlinseries
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.kotlinseries.ch9_ElvisOperator.ElvisOperatorExample
+import com.kotlinseries.ch7_HighOrder.HighOrderExample
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
         //AsyncCoroutine().start()
 //        ReifiedExmaple(this).start()
        // TailRecExample().start()
-        ElvisOperatorExample().start()
-
-    }
+            // ElvisOperatorExample().start()
+        HighOrderExample().start()
+                }
 }
 
 fun printLog(o:Any){
